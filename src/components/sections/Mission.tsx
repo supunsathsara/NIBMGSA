@@ -1,21 +1,9 @@
 'use client';
 
-import CardRoadmapsImg from '@assets/images/card-roadmaps.webp';
-import CardUpdatesImg from '@assets/images/card-updates.webp';
-import RoadmapImg from '@assets/images/roadmap.webp';
-import MissionImg from '@assets/images/mission.svg';
 import improveImg from '@assets/images/improve.svg';
+import MissionImg from '@assets/images/mission.svg';
 import powerfulImg from '@assets/images/powerful.svg';
 import { Features } from '@components/Features';
-
-import {
-  DocumentsIcon,
-  InsightsIcon,
-  MultiTeamIcon,
-  NotificationsIcon,
-  RoadmapsIcon,
-  TimelineIcon,
-} from '../icons/features/setDirection';
 
 export const Mission = () => {
   return (

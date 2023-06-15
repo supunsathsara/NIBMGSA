@@ -23,12 +23,12 @@ const buttonClasses = cva('relative inline-flex items-center rounded-full', {
   variants: {
     intent: {
       primary: [
-        'bg-primary-gradient hover:text-shadow hover:shadow-primary transition-[shadow,text-shadow]',
+        'hover:text-shadow bg-primary-gradient transition-[shadow,text-shadow] hover:shadow-primary',
         '[&_.highlight]:ml-2',
       ],
       secondary: [
-        'backdrop-filter-[12px] border border-gray-100 bg-white bg-opacity-10 text-gray-200 transition-colors ease-in hover:bg-opacity-20 backdrop-blur-[12px]',
-        '[&_.highlight]:bg-gray-100 [&_.highlight]:rounded-full [&_.highlight]:px-2 [&_.highlight:last-child]:ml-2 [&_.highlight:last-child]:-mr-2 [&_.highlight:first-child]:-ml-2 [&_.highlight:first-child]:mr-2',
+        'backdrop-filter-[12px] border border-gray-100 bg-white bg-opacity-10 text-gray-200 backdrop-blur-[12px] transition-colors ease-in hover:bg-opacity-20',
+        '[&_.highlight:first-child]:-ml-2 [&_.highlight:first-child]:mr-2 [&_.highlight:last-child]:-mr-2 [&_.highlight:last-child]:ml-2 [&_.highlight]:rounded-full [&_.highlight]:bg-gray-100 [&_.highlight]:px-2',
       ],
     },
     size: {

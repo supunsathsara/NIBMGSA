@@ -15,7 +15,7 @@ export const Footer = () => {
             <div className="flex items-center text-gray-400">
               <Image src={LogoM} alt={'Logo'} className="h-auto w-[40%]" />
             </div>
-            <div className="mt-auto ml-3 flex space-x-4 text-gray-400">
+            <div className="ml-3 mt-auto flex space-x-4 text-gray-400">
               <TwitterIcon />
               <GithubIcon />
             </div>

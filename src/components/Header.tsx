@@ -3,7 +3,6 @@
 import { Button } from '@components/Button';
 import { Container } from '@components/Container';
 import { HamburgerIcon } from '@components/icons/hamburger';
-import { Logo } from '@components/icons/logo';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -28,7 +27,7 @@ export const Header = () => {
   }, [setIsOpen]);
 
   return (
-    <header className="fixed top-0 left-0 z-10 w-full border-b border-gray-100 backdrop-blur-[12px]">
+    <header className="fixed left-0 top-0 z-10 w-full border-b border-gray-100 backdrop-blur-[12px]">
       <Container className="flex h-nav-height">
         <Link href="/" className="flex items-center text-lg font-bold">
           {/* <Logo className="mr-2 h-[1.8rem] w-[1.8rem]" /> */}NIBMGSA

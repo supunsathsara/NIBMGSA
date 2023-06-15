@@ -16,7 +16,7 @@ export const NavBar = ({ isOpen }: NavBarProps) => {
     >
       <nav
         className={clsx(
-          'fixed top-nav-height left-0 h-[calc(100vh_-_var(--nav-height))] w-full overflow-auto bg-black transition-opacity duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:opacity-100 md:transition-none',
+          'fixed left-0 top-nav-height h-[calc(100vh_-_var(--nav-height))] w-full overflow-auto bg-black transition-opacity duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:opacity-100 md:transition-none',
           isOpen
             ? 'translate-x-0 opacity-100'
             : 'translate-x-[-100vw] opacity-0'
@@ -26,10 +26,7 @@ export const NavBar = ({ isOpen }: NavBarProps) => {
           {Links.map((link) => (
             <li
               key={link.label}
-              className={clsx(
-                'ml-6 border-b border-gray-500 md:border-none',
-                link.className
-              )}
+              className={clsx('ml-6 border-b border-gray-500 md:border-none')}
             >
               <Link
                 href={link.href}

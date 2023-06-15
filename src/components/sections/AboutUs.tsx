@@ -20,7 +20,7 @@ export const AboutUs = () => {
               className="flex items-center justify-center gap-1"
             >
               Read More <span className="sr-only">About Us</span>
-              <ChevronIcon fill="#8A8F98" className="ml-1 mb-0" />
+              <ChevronIcon fill="#8A8F98" className="mb-0 ml-1" />
             </Link>
           </>
         }

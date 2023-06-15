@@ -1,14 +1,10 @@
 'use client';
 
-import CyclesImg from '@assets/images/cycles.webp';
 import { Features } from '@components/Features';
 
 import {
-  ConfigurableIcon,
   CreepIcon,
   DelaysIcon,
-  PreparedIcon,
-  ScheduledIcon,
   TrackingIcon,
 } from '../icons/features/buildMomentum';
 

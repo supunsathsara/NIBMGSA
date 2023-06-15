@@ -10,7 +10,6 @@ export const AvailableToday = () => {
         <Image src={Logo} alt="Linear app icon" className="w-[25.8rem]" />
         <h1 className="text-gradient text-5xl md:text-8xl">
           Empowering NIBM GALLE Students.
-
         </h1>
         <div className="flex gap-[1.6rem]">
           <Button type="button" intent="primary" size="lg">

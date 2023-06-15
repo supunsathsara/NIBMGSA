@@ -1,6 +1,5 @@
 'use client';
 
-import MeetTeamImg from '@assets/images/meet_the_team.svg';
 import { Container } from '@components/Container';
 import { CommitteeMembers as Members } from '@lib/data';
 import clsx from 'clsx';
@@ -14,7 +13,7 @@ export const Team = () => {
       id="committee"
       ref={ref}
       className={clsx(
-        'after:bg-[radial-gradient(ellipse_100%_40%_at_50%_60%,rgba(var(--feature-color),0.1),transparent) relative flex flex-col items-center overflow-x-clip before:pointer-events-none before:absolute before:h-[40rem] before:w-full before:bg-[conic-gradient(from_90deg_at_80%_50%,#000212,rgb(var(--feature-color-dark))),conic-gradient(from_270deg_at_20%_50%,rgb(var(--feature-color-dark)),#000212)] before:bg-no-repeat before:transition-[transform,opacity] before:duration-1000 before:ease-in before:[mask:radial-gradient(100%_50%_at_center_center,_black,_transparent)] before:[background-size:50%_100%,50%_100%] before:[background-position:1%_0%,99%_0%] after:pointer-events-none after:absolute after:inset-0',
+        'after:bg-[radial-gradient(ellipse_100%_40%_at_50%_60%,rgba(var(--feature-color),0.1),transparent) relative flex flex-col items-center overflow-x-clip before:pointer-events-none before:absolute before:h-[40rem] before:w-full before:bg-[conic-gradient(from_90deg_at_80%_50%,#000212,rgb(var(--feature-color-dark))),conic-gradient(from_270deg_at_20%_50%,rgb(var(--feature-color-dark)),#000212)] before:bg-no-repeat before:transition-[transform,opacity] before:duration-1000 before:ease-in before:[background-position:1%_0%,99%_0%] before:[background-size:50%_100%,50%_100%] before:[mask:radial-gradient(100%_50%_at_center_center,_black,_transparent)] after:pointer-events-none after:absolute after:inset-0',
         inView &&
           'is-visible before:opacity-100 before:[transform:rotate(180deg)_scale(2)]',
         !inView && 'before:rotate-180 before:opacity-40'
@@ -41,7 +40,7 @@ export const Team = () => {
             </div> */}
           </Container>
         </div>
-        <Container className="w-[78rem] max-w-[90%] text-center text-white mt-10">
+        <Container className="mt-10 w-[78rem] max-w-[90%] text-center text-white">
           <>
             <p className="mx-auto mb-12 mt-16 text-xl leading-tight text-white md:mt-12 md:w-full md:text-3xl">
               Leading with Excellence, Guiding with Passion
