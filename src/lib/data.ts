@@ -58,9 +58,9 @@ export const NavLinks = [
 
 export const CommitteeMembers = [
   { name: 'Dimuth Nilanjana', designation: 'President', image: 'user.jpg' },
-  { name: 'John doe', designation: 'Secretary', image: 'user.jpg' },
-  { name: 'John doe', designation: 'Treasurer', image: 'user.jpg' },
+  { name: 'Chandures Priyavinda', designation: 'Secretary', image: 'user.jpg' },
+  { name: 'Mayura Alagiyawatta', designation: 'Treasurer', image: 'user.jpg' },
   { name: 'John doe', designation: 'President1', image: 'user.jpg' },
-  { name: 'John doe', designation: 'Secretary1', image: 'user.jpg' },
+  { name: 'Thilina', designation: 'Secretary1', image: 'user.jpg' },
   { name: 'John doe', designation: 'Treasurer1', image: 'user.jpg' },
 ];

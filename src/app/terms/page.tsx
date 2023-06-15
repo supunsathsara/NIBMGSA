@@ -55,7 +55,7 @@ export default function TermsPage() {
         </p>
         <p className="mt-4 text-lg">
           If you have any questions or concerns regarding these terms and
-          conditions, please contact us at [contact email].
+          conditions, please contact us at nibmgsa@gmail.com.
         </p>
         <p className="mt-10 text-right text-md">Last updated: 2023.06.10</p>
       </div>

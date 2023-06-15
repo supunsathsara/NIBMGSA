@@ -74,7 +74,7 @@ export default function PrivacyPage() {
         </p>
         <p className="my-4 text-lg">
           If you have any questions or concerns about our Privacy Policy, please
-          contact us at [email address].
+          contact us at nibmgsa@gmail.com
         </p>
       </div>
     </div>
