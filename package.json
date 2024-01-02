@@ -1,6 +1,6 @@
 {
-  "name": "linear-clone",
-  "author": "Huy Nguyen (https://github.com/thenameiswiiwin)",
+  "name": "NIBMGSA",
+  "author": "@madubashinigamage",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,7 @@
     "build:starts": "cross-env ANALYZE=true npm run build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
-    "check-types": "tsc --noEmit --pretty",
-    "commit": "cz",
-    "prepare": "husky install"
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@sanity/image-url": "1",
