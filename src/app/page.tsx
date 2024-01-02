@@ -6,10 +6,8 @@ import { BuildMomentum } from '@components/sections/BuildMomentum';
 import { Clients } from '@components/sections/Clients';
 import { ContactUs } from '@components/sections/ContactUs';
 import { HomepageHero } from '@components/sections/HomepageHero';
-import { LinearWorkflows } from '@components/sections/LinearWorkflows';
 import { Mission } from '@components/sections/Mission';
 import { Team } from '@components/sections/Team';
-import { UnlikeAnyTools } from '@components/sections/UnlikeAnyTools';
 import clsx from 'clsx';
 import { getCommitteeMembers } from '../../sanity/lib/queries';
 
@@ -36,12 +34,10 @@ export default async function Homepage() {
       >
         <StarsIllustration className="absolute top-[50%] left-[50%] [transform:translate(-50%,-50%)]" />
       </div>
-      {/* <UnlikeAnyTools /> */}
       <AboutUs />
       <Team members={CommitteeMembers}/>
       <BuildMomentum />
       <Mission />
-      {/* <LinearWorkflows /> */}
       <ContactUs />
       <div
         className={clsx(

@@ -5,9 +5,35 @@ import { Container } from '@components/Container';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
+import { supabase } from '@lib/supabaseClient';
+import { useState } from 'react';
 
 export const ContactUs = () => {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  //handle submit
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const subject = formData.get('subject');
+    const message = formData.get('message');
+
+    const { data, error } = await supabase
+      .from('contact_us')
+      .insert([{ name, email, subject, message }]);
+    if (error) {
+      console.log(error);
+      setIsSubmitted(false);
+      return;
+    }
+    setIsSubmitted(true);
+    //clear the form
+    e.currentTarget.reset();
+    console.log('submitted');
+  };
 
   return (
     <section
@@ -50,6 +76,7 @@ export const ContactUs = () => {
             <form
               action="#"
               className="z-10 mt-4 flex flex-col gap-3 text-start text-white"
+              onSubmit={handleSubmit}
             >
               <div className="flex w-full flex-row gap-3">
                 <div className="flex w-1/2 flex-col">
@@ -104,9 +131,10 @@ export const ContactUs = () => {
               <div className="flex w-1/2 flex-col">
                 <button
                   type="submit"
+                  disabled={isSubmitted}
                   className="float-right mx-auto rounded-md border-2 border-white px-10 py-4 text-md font-bold hover:bg-gray-200 hover:text-black md:text-xl"
                 >
-                  Send
+                  {isSubmitted ? 'Submitted' : 'Submit'}
                 </button>
               </div>
             </form>

@@ -2,6 +2,7 @@ import Logo from '@assets/images/logo-m.svg';
 import { Button } from '@components/Button';
 import { Container } from '@components/Container';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const AvailableToday = () => {
   return (
@@ -14,7 +15,9 @@ export const AvailableToday = () => {
         </h1>
         <div className="flex gap-[1.6rem]">
           <Button type="button" intent="primary" size="lg">
+            <Link href='/register'>
             Join us now
+            </Link>
           </Button>
         </div>
       </div>

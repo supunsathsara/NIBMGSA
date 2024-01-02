@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -48,6 +50,8 @@ module.exports = {
       },
       transparent: 'transparent',
       white: '#fff',
+      green: '#059669',
+      ...colors,
     },
     fontFamily: {
       sans: '"SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',

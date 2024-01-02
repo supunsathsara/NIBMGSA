@@ -39,7 +39,7 @@ export const Header = () => {
         </Link>
         <NavBar isOpen={isOpen} />
         <div className="ml-auto flex h-full items-center">
-          <Button href="/login" intent="primary">
+          <Button href="/register" intent="primary">
             Register
           </Button>
         </div>
